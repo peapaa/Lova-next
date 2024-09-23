@@ -29,16 +29,28 @@ const useSearchQuery = () => {
   }
 
   const handleNextPage = () => {
-    router.push(
-      `?page=${page + 1}&search=${searchText}&category=${searchCategory}`
-    );
+    const params = new URLSearchParams();
+    params.set("page", (page + 1).toString());
+    if (searchText) {
+      params.set("search", searchText);
+    }
+    if (searchCategory) {
+      params.set("category", searchCategory);
+    }
+    router.push(`?${params.toString()}`);
   };
 
   const handlePrevPage = () => {
     if (page > 0) {
-      router.push(
-        `?page=${page - 1}&search=${searchText}&category=${searchCategory}`
-      );
+      const params = new URLSearchParams();
+      params.set("page", (page - 1).toString());
+      if (searchText) {
+        params.set("search", searchText);
+      }
+      if (searchCategory) {
+        params.set("category", searchCategory);
+      }
+      router.push(`?${params.toString()}`);
     }
   };
 
