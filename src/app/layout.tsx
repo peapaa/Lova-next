@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-backgroundColor border w-full">
+      <body className="bg-backgroundColor border w-full max-w-[1920px]">
         <AuthProvider>
           <ThemeProvider theme={theme}>
             {/* <div className="font-nunito_Sans"> */}

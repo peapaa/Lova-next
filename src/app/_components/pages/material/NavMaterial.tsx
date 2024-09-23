@@ -35,7 +35,7 @@ const NavMaterialCategories = () => {
       <Typography sx={{ fontSize: 24, color: theme.palette.text.primary }}>
         Marterial Category
       </Typography>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center flex-wrap">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="flex justify-between items-center gap-5"

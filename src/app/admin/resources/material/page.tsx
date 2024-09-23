@@ -1,5 +1,6 @@
 import MarterialCategoriesList from "@/_components/pages/material/ListMaterial";
 import NavMaterialCategories from "@/_components/pages/material/NavMaterial";
+import { Box } from "@mui/material";
 
 export const metadata = {
   title: "Laravel Nova | Material",
@@ -8,10 +9,10 @@ export const metadata = {
 };
 const page = () => {
   return (
-    <>
+    <Box>
       <NavMaterialCategories />
       <MarterialCategoriesList />
-    </>
+    </Box>
   );
 };
 

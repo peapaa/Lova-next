@@ -19,7 +19,6 @@ function LayoutAdmin({
   const authContext = useAuthContext();
   const router = useRouter();
   const { token } = authContext;
-  console.log("token", token);
 
   useEffect(() => {
     if (!token) {
@@ -28,19 +27,15 @@ function LayoutAdmin({
   }, [router, token]);
 
   return (
-    <div>
+    <div className="w-full h-full">
       <Header />
-      <div className="flex min-h-[calc(100vh-60px)]">
+      <div className="flex min-h-[calc(100vh-60px)] w-full">
         <Box flex={1}>
           <SideBar />
         </Box>
-        <Box flex={5}>
+        <Box flex={5} className="pr-4 overflow-auto">
           <div className="flex flex-col h-full">
-            <div className="flex-grow">
-              <div className="w-full xl:pl-8 xl:pr-8 my-6 lg:pl-0 lg:pr-2 ">
-                {children}
-              </div>
-            </div>
+            <div className="flex-grow">{children}</div>
             <Footer />
           </div>
         </Box>

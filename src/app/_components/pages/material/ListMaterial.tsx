@@ -173,8 +173,8 @@ const MarterialCategoriesList = () => {
       <Box
         sx={{
           width: "100%",
-          maxWidth: "1140px",
           minWidth: "840px",
+          maxWidth: "1600px",
           overflowX: "auto",
         }}
       >
