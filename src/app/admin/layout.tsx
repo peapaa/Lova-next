@@ -22,6 +22,8 @@ function LayoutAdmin({
 
   useEffect(() => {
     if (!token) {
+      localStorage.setItem("redirectPath", window.location.href);
+      console.log("window.location.href", window.location.href);
       router.push("/login");
     }
   }, [router, token]);

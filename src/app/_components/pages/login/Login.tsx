@@ -49,8 +49,6 @@ const Login: React.FC = () => {
   } = useForm({
     resolver: yupResolver(schema),
   });
-  // const location = useLocation();
-  // const from = location?.state?.from?.pathname || "/admin/resources/categories";
 
   useEffect(() => {
     const handleLogin = async (data: UserLogin) => {
@@ -64,18 +62,15 @@ const Login: React.FC = () => {
           })
         );
 
-        // if (location?.state?.from?.pathname) {
-        //   localStorage.setItem("redirectPath", location.state.from.pathname);
-        // }
-
         if (setToken) {
           setToken(checkLogin.data.access);
         }
 
         if (checkLogin.status === 200) {
           toast.success("Login successful!");
-          // navigate(from, { replace: true });
-          router.push("/admin/resources/category");
+          const redirectPath =
+            localStorage.getItem("redirectPath") || "/admin/resources/category";
+          router.push(redirectPath);
         }
       } catch (error) {
         console.log(error);
