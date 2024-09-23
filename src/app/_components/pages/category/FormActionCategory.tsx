@@ -24,7 +24,7 @@ const FormActionCategory: React.FC<FormActionProps> = ({
     control,
   } = formMethod;
   return (
-    <div className="bg-white w-full rounded-md p-5 ">
+    <div className="bg-white w-full p-5 ">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex gap-10 h-[400px] items-center justify-center"
