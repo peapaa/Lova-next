@@ -8,6 +8,7 @@ import { Box, InputAdornment, InputBase } from "@mui/material";
 import { GoSearch } from "react-icons/go";
 
 const InputSearchByName: React.FC<InputSearchProps> = ({ value, onChange }) => {
+  console.log("value", value);
   return (
     <Box
       sx={{

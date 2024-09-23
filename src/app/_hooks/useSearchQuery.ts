@@ -25,12 +25,10 @@ const useSearchQuery = () => {
 
   if (page < 1) {
     page = 1;
-    // searchParams.set("page", "1");
     router.push("?page=1");
   }
 
   const handleNextPage = () => {
-    // searchParams.set("page", `${page + 1}`);
     router.push(
       `?page=${page + 1}&search=${searchText}&category=${searchCategory}`
     );
@@ -38,37 +36,32 @@ const useSearchQuery = () => {
 
   const handlePrevPage = () => {
     if (page > 0) {
-      //   searchParams.set("page", `${page - 1}`);
       router.push(
         `?page=${page - 1}&search=${searchText}&category=${searchCategory}`
       );
     }
   };
 
-  const handleKeyDown = (searchText: string) => {
-    if (searchText.trim() === "") {
-      //   searchParams.delete("search");
-      const params = new URLSearchParams(searchParams.toString());
-      params.delete("search");
-      router.push(`?${params.toString()}`);
-    } else {
-      //   searchParams.set("search", searchText.trim());
-      //   searchParams.set("page", "1");
-      router.push(`?search=${searchText.trim()}&page=1`);
+  const handleSearch = (searchText?: string, searchCategory?: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (searchText !== undefined) {
+      if (searchText.trim() === "") {
+        params.delete("search");
+      } else {
+        params.set("search", searchText);
+      }
     }
-  };
 
-  const handleKeyDownInputCategory = (searchCategory: string) => {
-    if (searchCategory.trim() === "") {
-      //   searchParams.delete("category");
-      const params = new URLSearchParams(searchParams.toString());
-      params.delete("category");
-      router.push(`?${params.toString()}`);
-    } else {
-      //   searchParams.set("category", searchCategory.trim());
-      //   searchParams.set("page", "1");
-      router.push(`?category=${searchCategory.trim()}&page=1`);
+    if (searchCategory !== undefined) {
+      if (searchCategory.trim() === "") {
+        params.delete("category");
+      } else {
+        params.set("category", searchCategory);
+      }
     }
+
+    params.set("page", "1");
+    router.push(`?${params.toString()}`);
   };
 
   const handleResetSearch = () => {
@@ -77,8 +70,7 @@ const useSearchQuery = () => {
   return {
     searchText,
     searchCategory,
-    handleKeyDown,
-    handleKeyDownInputCategory,
+    handleSearch,
     handleNextPage,
     handlePrevPage,
     page,

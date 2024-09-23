@@ -19,14 +19,14 @@ import { FormValuesCategory } from "@/_components/pages/category/type";
 const NavCategory = () => {
   const theme = useTheme();
   const pathname = usePathname();
-  const { handleKeyDown } = useSearchQuery();
+  const { handleSearch } = useSearchQuery();
   const { handleSubmit, control } = useForm<FormValuesCategory>({
     defaultValues: {
       searchText: "",
     },
   });
   const onSubmit = (data: FormValuesCategory) => {
-    handleKeyDown(data.searchText);
+    handleSearch(data.searchText);
   };
   return (
     <div className="flex my-5 items-end justify-between">

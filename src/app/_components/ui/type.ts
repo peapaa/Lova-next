@@ -1,3 +1,10 @@
+import { Control, FieldErrors, UseFormReset } from "react-hook-form";
+// type
+import {
+  FormValuesMaterial,
+  MarterialCategoriesProps,
+} from "@/_components/pages/material/type";
+// util
 import { priceTypesProps } from "@/_utils/data";
 
 export interface LoadingProps {
@@ -43,4 +50,27 @@ export interface SelectOptionProps {
 
 export interface ButtonFormProps {
   loading: boolean;
+}
+
+export interface ControllerFormProps {
+  control: Control<MarterialCategoriesProps, unknown>;
+  errors: FieldErrors<MarterialCategoriesProps>;
+  name: string;
+  title: string;
+  typeInput?: string;
+  OptionValues?: priceTypesProps[];
+}
+
+export interface ControllerFormSelectWithCategoriesProps {
+  control: Control<MarterialCategoriesProps, unknown>;
+  errorForm: FieldErrors<MarterialCategoriesProps>;
+}
+
+export interface ControllerFormSelectWithSupplierProps {
+  control: Control<MarterialCategoriesProps, unknown>;
+  errorForm: FieldErrors<MarterialCategoriesProps>;
+}
+
+export interface ButtonClearSearchProps {
+  reset: UseFormReset<FormValuesMaterial>;
 }

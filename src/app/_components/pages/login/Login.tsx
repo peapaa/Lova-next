@@ -75,7 +75,7 @@ const Login: React.FC = () => {
         if (checkLogin.status === 200) {
           toast.success("Login successful!");
           // navigate(from, { replace: true });
-          router.push("/admin");
+          router.push("/admin/resources/category");
         }
       } catch (error) {
         console.log(error);
