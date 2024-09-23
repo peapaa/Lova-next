@@ -11,7 +11,15 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        backgroundColor: "#f1f5f9",
       },
+      boxShadow: {
+        shadowCategory: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+        shadowInput: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
+      },
+      // fontFamily: {
+      //   nunito_Sans: "Nunito Sans",
+      // },
     },
   },
   plugins: [],
