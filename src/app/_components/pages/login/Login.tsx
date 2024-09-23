@@ -91,8 +91,8 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center mt-20 ">
-      <div className="min-w-[380px] mx-auto mt-10 px-10 py-8 bg-white rounded-lg shadow-md">
+    <div className="flex flex-col items-center h-screen justify-center">
+      <div className="min-w-[380px] mx-auto px-10 py-8 bg-white rounded-lg shadow-md">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col justify-center items-center "
