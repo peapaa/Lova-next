@@ -1,4 +1,4 @@
-import { CategoriesProps } from "@/_components/table/type";
+import { CategoriesProps } from "../_components/table/type";
 
 export interface WithCheckIdProps {
   id: string;

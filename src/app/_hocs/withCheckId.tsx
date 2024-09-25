@@ -1,6 +1,6 @@
 import React from "react";
 
-import { WithCheckIdProps } from "@/_hocs/type";
+import { WithCheckIdProps } from "../_hocs/type";
 import { useParams, usePathname, useRouter } from "next/navigation";
 function withCheckId<T extends WithCheckIdProps>(
   Component: React.ComponentType<T>

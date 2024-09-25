@@ -1,4 +1,4 @@
-import axiosInstance from "@/_axios";
+import axiosInstance from "../../_axios";
 
 // call api useEffect
 

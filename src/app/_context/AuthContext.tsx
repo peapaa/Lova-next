@@ -1,6 +1,6 @@
 "use client";
 
-import Loading from "@/_components/ui/loading/Loading";
+import Loading from "../_components/ui/loading/Loading";
 import { Box } from "@mui/material";
 import * as React from "react";
 import { createContext, ReactNode, useEffect, useState } from "react";

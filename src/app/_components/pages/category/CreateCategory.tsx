@@ -1,24 +1,24 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, Resolver } from "react-hook-form";
 import { toast } from "react-toastify";
 
 // yup
 import { yupResolver } from "@hookform/resolvers/yup";
-import { createCategoryschema } from "@/_components/pages/category/validateCategory";
+import { createCategoryschema } from "../../../_components/pages/category/validateCategory";
 
 // service
 
 // type
-import { DataCategory } from "@/_components/pages/category/type";
+import { DataCategory } from "../../../_components/pages/category/type";
 
 // component
-import formDataCategory from "@/_components/pages/category/formDataCategory";
-import FormActionCategory from "@/_components/pages/category/FormActionCategory";
+import formDataCategory from "../../../_components/pages/category/formDataCategory";
+import FormActionCategory from "../../../_components/pages/category/FormActionCategory";
 
 // api
-import { createCategories } from "@/_api/category";
+import { createCategories } from "../../../_api/category";
 import { useRouter } from "next/navigation";
 
 const CreateCategory = () => {
@@ -26,7 +26,9 @@ const CreateCategory = () => {
   const router = useRouter();
   const [newImage] = useState<string | null>(null);
   const formMethod = useForm<DataCategory>({
-    resolver: yupResolver(createCategoryschema),
+    resolver: yupResolver(
+      createCategoryschema
+    ) as unknown as Resolver<DataCategory>,
     defaultValues: {
       image: [],
       name: "",

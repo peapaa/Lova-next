@@ -1,14 +1,14 @@
 // hoc
-import { withGetCategories } from "@/_hocs";
+import { withGetCategories } from "../../../_hocs";
 /// mui
 import { Box } from "@mui/material";
 // type
-import { WithCategoriesProps } from "@/_hocs/type";
-import { ControllerFormSelectWithCategoriesProps } from "@/_components/ui/type";
+import { WithCategoriesProps } from "../../../_hocs/type";
+import { ControllerFormSelectWithCategoriesProps } from "../../../_components/ui/type";
 // component
-import Loading from "@/_components/ui/loading/Loading";
-import { ButtonRetry } from "@/_components/ui/button";
-import ControllerFormSelect from "@/_components/ui/form/ControllerFormSelect";
+import Loading from "../../../_components/ui/loading/Loading";
+import { ButtonRetry } from "../../../_components/ui/button";
+import ControllerFormSelect from "../../../_components/ui/form/ControllerFormSelect";
 
 const ControllerFormSelectWithCategories = ({
   categories,

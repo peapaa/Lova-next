@@ -21,16 +21,16 @@ import {
 import { useTheme } from "@mui/material/styles";
 
 // logo
-import logo from "@/_assets/images/header-logo/logo.png";
+import logo from "../../../_assets/images/header-logo/logo.png";
 
 // context
-import AuthContext from "@/_context/AuthContext";
 
 // image
 import Image from "next/image";
 
 // router
 import { useRouter } from "next/navigation";
+import AuthContext from "../../../_context/AuthContext";
 
 const Header: React.FC = () => {
   const theme = useTheme();

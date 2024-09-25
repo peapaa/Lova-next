@@ -1,8 +1,8 @@
 import { ComponentType, useEffect, useState } from "react";
 // api
-import { getSupplier } from "@/_api/supplier";
+import { getSupplier } from "../_api/supplier";
 // type
-import { SupplierProps, withSupplierProps } from "@/_hocs/type";
+import { SupplierProps, withSupplierProps } from "../_hocs/type";
 
 function withGetSupplier<T>(Component: ComponentType<T & withSupplierProps>) {
   // eslint-disable-next-line react/display-name

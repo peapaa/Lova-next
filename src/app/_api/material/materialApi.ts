@@ -1,4 +1,4 @@
-import axiosInstance from "@/_axios";
+import axiosInstance from "../../_axios";
 
 export const getAllCategoriesForMaterial = async () => {
   const response = await axiosInstance.get("/api/cms/material_categories");

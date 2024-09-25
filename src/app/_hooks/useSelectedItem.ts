@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // type
-import { GenericData } from "@/_hooks/type";
+import { GenericData } from "../_hooks/type";
 
 const useSelectedItem = () => {
   const [selected, setSelected] = useState<string[]>([]);

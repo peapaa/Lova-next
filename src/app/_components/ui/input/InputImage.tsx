@@ -5,10 +5,10 @@ import Image from "next/image";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 
 // type
-import { InputImageProps } from "@/_components/ui/type";
+import { InputImageProps } from "../../../_components/ui/type";
 
 // component
-import ErrorText from "@/_components/ui/error-text/ErrorText";
+import ErrorText from "../../../_components/ui/error-text/ErrorText";
 
 const InputImage: React.FC<InputImageProps> = ({
   value,

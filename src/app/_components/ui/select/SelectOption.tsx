@@ -1,8 +1,8 @@
 // type
-import { SelectOptionProps } from "@/_components/ui/type";
+import { SelectOptionProps } from "../../../_components/ui/type";
 
 // component
-import ErrorText from "@/_components/ui/error-text/ErrorText";
+import ErrorText from "../../../_components/ui/error-text/ErrorText";
 
 // mui
 import { FormControl, MenuItem, Select } from "@mui/material";

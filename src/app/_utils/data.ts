@@ -1,4 +1,4 @@
-import { HeadCell } from "@/_components/table/type";
+import { HeadCell } from "../_components/table/type";
 
 // dashboard list
 export const dashboardList = [{ href: "/admin/dashbroad/main", title: "Main" }];

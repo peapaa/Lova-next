@@ -1,31 +1,31 @@
 "use client";
 
 // component
-import NotFound from "@/_components/ui/product/NotFound";
-import Loading from "@/_components/ui/loading/Loading";
-import NoProduct from "@/_components/ui/product/NoProduct";
-import SelectCheckAllTable from "@/_components/table/SelectCheckAllTable";
-import EnhancedTableHead from "@/_components/table/EnhancedTableHead";
-import CustomTablePagination from "@/_components/table/CustomTablePagination";
-import { DeleteCategoryDialog } from "@/_components/ui/dialog";
+import NotFound from "../../../_components/ui/product/NotFound";
+import Loading from "../../../_components/ui/loading/Loading";
+import NoProduct from "../../../_components/ui/product/NoProduct";
+import SelectCheckAllTable from "../../../_components/table/SelectCheckAllTable";
+import EnhancedTableHead from "../../../_components/table/EnhancedTableHead";
+import CustomTablePagination from "../../../_components/table/CustomTablePagination";
+import { DeleteCategoryDialog } from "../../../_components/ui/dialog";
 
 // hooks
-import useSearchQuery from "@/_hooks/useSearchQuery";
-import useSelectedItem from "@/_hooks/useSelectedItem";
+import useSearchQuery from "../../../_hooks/useSearchQuery";
+import useSelectedItem from "../../../_hooks/useSelectedItem";
 
 // type
-import { GetAllMarterialCategoriesProps } from "@/_components/pages/material/type";
-import { DeleteHandleProps } from "@/_types/type";
+import { GetAllMarterialCategoriesProps } from "../../../_components/pages/material/type";
+import { DeleteHandleProps } from "../../../_types/type";
 
 // api
 import {
   deleteOneMaterial,
   deleteSelectedMutilpleMaterials,
   getAllMarterialCategories,
-} from "@/_api/material";
+} from "../../../_api/material";
 
 // utils
-import { headCellMaterialCategory } from "@/_utils/data";
+import { headCellMaterialCategory } from "../../../_utils/data";
 
 import {
   Box,

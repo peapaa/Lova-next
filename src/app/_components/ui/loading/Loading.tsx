@@ -1,4 +1,4 @@
-import { LoadingProps } from "@/_components/ui/type";
+import { LoadingProps } from "../../../_components/ui/type";
 import { CircularProgress } from "@mui/material";
 
 const Loading: React.FC<LoadingProps> = ({ className }) => {

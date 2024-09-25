@@ -1,10 +1,10 @@
 import React, { ComponentType, useEffect, useState } from "react";
 // hoc
 // type
-import { WithCategoriesProps } from "@/_hocs/type";
-import { CategoriesProps } from "@/_components/table/type";
+import { WithCategoriesProps } from "../_hocs/type";
+import { CategoriesProps } from "../_components/table/type";
 // api
-import { getAllCategoriesForMaterial } from "@/_api/material";
+import { getAllCategoriesForMaterial } from "../_api/material";
 
 function withGetCategories<T>(
   Component: ComponentType<T & WithCategoriesProps>

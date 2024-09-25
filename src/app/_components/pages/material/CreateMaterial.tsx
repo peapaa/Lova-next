@@ -2,18 +2,18 @@
 
 import axios from "axios";
 import { useCallback, useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, Resolver } from "react-hook-form";
 import { toast } from "react-toastify";
 // component
-import formDataMaterial from "@/_components/pages/material/form/formDataMaterial";
-import FormActionMaterial from "@/_components/pages/material/form/FormActionMaterial";
+import formDataMaterial from "../../../_components/pages/material/form/formDataMaterial";
+import FormActionMaterial from "../../../_components/pages/material/form/FormActionMaterial";
 // api
-import { createMaterialCategory } from "@/_api/material";
+import { createMaterialCategory } from "../../../_api/material";
 // yup
 import { yupResolver } from "@hookform/resolvers/yup";
-import { createMaterialSchema } from "@/_components/pages/material/validateMaterial";
+import { createMaterialSchema } from "../../../_components/pages/material/validateMaterial";
 // type
-import { MarterialCategoriesProps } from "@/_components/pages/material/type";
+import { MarterialCategoriesProps } from "../../../_components/pages/material/type";
 // next
 import { useRouter } from "next/navigation";
 
@@ -22,7 +22,9 @@ const CreateMarterial = () => {
   const [newImage] = useState<string | null>(null);
   const router = useRouter();
   const formMethod = useForm<MarterialCategoriesProps>({
-    resolver: yupResolver(createMaterialSchema),
+    resolver: yupResolver(
+      createMaterialSchema
+    ) as unknown as Resolver<MarterialCategoriesProps>,
     defaultValues: {
       image: [],
       part_number: "",

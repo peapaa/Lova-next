@@ -1,7 +1,7 @@
 import * as React from "react";
 
 // hook
-import useSearchQuery from "@/_hooks/useSearchQuery";
+import useSearchQuery from "../_hooks/useSearchQuery";
 
 export const useGetUrlCategory = () => {
   const { searchText, page } = useSearchQuery();

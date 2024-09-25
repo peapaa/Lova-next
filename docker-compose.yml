@@ -1,0 +1,13 @@
+version: "3.8" # Định dạng phiên bản
+
+services:
+  web:
+    build:
+      context: . # Thư mục hiện tại, nơi chứa Dockerfile
+      dockerfile: Dockerfile # Tên file Dockerfile
+    ports:
+      - "3000:3000" # Mở cổng 3000 trên máy host và container
+    environment:
+      NODE_ENV: production # Thiết lập biến môi trường
+
+    restart: unless-stopped # Tự động khởi động lại nếu container bị dừng

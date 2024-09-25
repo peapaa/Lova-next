@@ -1,7 +1,7 @@
 import { useRouter } from "next/navigation";
 
 // type
-import { ButtonFormProps } from "@/_components/ui/type";
+import { ButtonFormProps } from "../../../_components/ui/type";
 
 // mui
 import { Button } from "@mui/material";

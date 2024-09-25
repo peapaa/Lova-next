@@ -5,10 +5,10 @@ import { Box, IconButton, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 // hooks
-import useSearchQuery from "@/_hooks/useSearchQuery";
+import useSearchQuery from "../../_hooks/useSearchQuery";
 
 // type
-import { CustomTablePaginationProps } from "@/_components/table/type";
+import { CustomTablePaginationProps } from "../../_components/table/type";
 
 const CustomTablePagination: React.FC<CustomTablePaginationProps> = ({
   count,

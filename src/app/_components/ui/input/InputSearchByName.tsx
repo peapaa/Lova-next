@@ -1,5 +1,5 @@
 // type
-import { InputSearchProps } from "@/_components/ui/type";
+import { InputSearchProps } from "../../../_components/ui/type";
 
 // mui
 import { Box, InputAdornment, InputBase } from "@mui/material";

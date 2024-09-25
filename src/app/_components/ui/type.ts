@@ -3,9 +3,9 @@ import { Control, FieldErrors, UseFormReset } from "react-hook-form";
 import {
   FormValuesMaterial,
   MarterialCategoriesProps,
-} from "@/_components/pages/material/type";
+} from "../../_components/pages/material/type";
 // util
-import { priceTypesProps } from "@/_utils/data";
+import { priceTypesProps } from "../../_utils/data";
 
 export interface LoadingProps {
   className?: string;

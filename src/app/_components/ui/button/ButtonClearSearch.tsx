@@ -1,7 +1,7 @@
 // type
-import { ButtonClearSearchProps } from "@/_components/ui/type";
+import { ButtonClearSearchProps } from "../../../_components/ui/type";
 // hooks
-import useSearchQuery from "@/_hooks/useSearchQuery";
+import useSearchQuery from "../../../_hooks/useSearchQuery";
 // mui
 import SearchOffIcon from "@mui/icons-material/SearchOff";
 import { IconButton } from "@mui/material";

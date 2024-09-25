@@ -1,10 +1,10 @@
 import axios from "axios";
 
 // service
-import { refreshAccessToken } from "@/_api/auth/authApi";
+import { refreshAccessToken } from "../_api/auth/authApi";
 
 // config
-import configs from "@/_config";
+import configs from "../_config";
 
 // jwt
 import { jwtDecode } from "jwt-decode";

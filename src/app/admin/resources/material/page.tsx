@@ -1,5 +1,5 @@
-import MarterialCategoriesList from "@/_components/pages/material/ListMaterial";
-import NavMaterialCategories from "@/_components/pages/material/NavMaterial";
+import MarterialCategoriesList from "../../../_components/pages/material/ListMaterial";
+import NavMaterialCategories from "../../../_components/pages/material/NavMaterial";
 import { Box } from "@mui/material";
 
 export const metadata = {

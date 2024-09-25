@@ -1,7 +1,7 @@
 import {
   imageCreateCategorySchema,
   imageEditCategorySchema,
-} from "@/_components/pages/category/validateCategory";
+} from "../../../_components/pages/category/validateCategory";
 import * as Yup from "yup";
 
 const partNumberSchema = Yup.string()

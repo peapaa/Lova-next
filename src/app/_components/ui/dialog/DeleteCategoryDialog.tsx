@@ -8,7 +8,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 import { Box, DialogContent } from "@mui/material";
 
 //type
-import { DeleteHandleProps } from "@/_types/type";
+import { DeleteHandleProps } from "../../../_types/type";
 
 interface DeleteCategoryProps {
   onClick: () => void;

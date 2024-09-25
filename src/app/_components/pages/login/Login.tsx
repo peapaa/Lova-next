@@ -1,7 +1,7 @@
 "use client";
 
-import { login } from "@/_api/auth/authApi";
-import AuthContext from "@/_context/AuthContext";
+import { login } from "../../../_api/auth/authApi";
+import AuthContext from "../../../_context/AuthContext";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useRouter } from "next/navigation";
 import { useContext, useEffect, useState } from "react";

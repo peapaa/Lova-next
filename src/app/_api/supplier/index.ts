@@ -1,1 +1,1 @@
-export { getSupplier } from "@/_api/supplier/supplierApi";
+export { getSupplier } from "../../_api/supplier/supplierApi";

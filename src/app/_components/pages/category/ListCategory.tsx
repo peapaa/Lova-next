@@ -21,25 +21,25 @@ import Tooltip from "@mui/material/Tooltip";
 import { useTheme } from "@mui/material/styles";
 
 // component
-import NotFound from "@/_components/ui/product/NotFound";
-import NoProduct from "@/_components/ui/product/NoProduct";
-import { ButtonRetry } from "@/_components/ui/button";
-import SelectCheckAllTable from "@/_components/table/SelectCheckAllTable";
-import CustomTablePagination from "@/_components/table/CustomTablePagination";
-import EnhancedTableHead from "@/_components/table/EnhancedTableHead";
-import { DeleteCategoryDialog } from "@/_components/ui/dialog";
+import NotFound from "../../../_components/ui/product/NotFound";
+import NoProduct from "../../../_components/ui/product/NoProduct";
+import { ButtonRetry } from "../../../_components/ui/button";
+import SelectCheckAllTable from "../../../_components/table/SelectCheckAllTable";
+import CustomTablePagination from "../../../_components/table/CustomTablePagination";
+import EnhancedTableHead from "../../../_components/table/EnhancedTableHead";
+import { DeleteCategoryDialog } from "../../../_components/ui/dialog";
 
 //api
 import {
   deleteOneCategories,
   deleteSelectedMutilpleCategories,
   getAllCategories,
-} from "@/_api/category";
+} from "../../../_api/category";
 
 // hooks
-import useSelectedItem from "@/_hooks/useSelectedItem";
-import useSearchQuery from "@/_hooks/useSearchQuery";
-import { useGetUrlCategory } from "@/_hooks/useGetUrlCategory";
+import useSelectedItem from "../../../_hooks/useSelectedItem";
+import useSearchQuery from "../../../_hooks/useSearchQuery";
+import { useGetUrlCategory } from "../../../_hooks/useGetUrlCategory";
 
 import { toast } from "react-toastify";
 
@@ -47,11 +47,11 @@ import { toast } from "react-toastify";
 import useSWR, { mutate } from "swr";
 
 // type
-import { DeleteCategory, DeleteHandleProps } from "@/_types/type";
-import { CategoriesProps } from "@/_components/table/type";
+import { DeleteCategory, DeleteHandleProps } from "../../../_types/type";
+import { CategoriesProps } from "../../../_components/table/type";
 
 // utils
-import { headCellCategory } from "@/_utils/data";
+import { headCellCategory } from "../../../_utils/data";
 
 export default function ListCategory() {
   const { selected, handleSlectedItem, handleSelectAllClick, setSelected } =

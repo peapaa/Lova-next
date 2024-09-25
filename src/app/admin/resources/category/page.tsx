@@ -1,6 +1,6 @@
 // component
-import { NavCategory } from "@/_components/pages/category";
-import ListCategory from "@/_components/pages/category/ListCategory";
+import { NavCategory } from "../../../_components/pages/category";
+import ListCategory from "../../../_components/pages/category/ListCategory";
 
 export const metadata = {
   title: "Laravel Nova | Category",

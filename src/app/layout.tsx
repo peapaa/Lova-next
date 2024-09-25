@@ -1,5 +1,5 @@
-import { AuthProvider } from "@/_context/AuthContext";
-import theme from "@/_theme";
+import { AuthProvider } from "./_context/AuthContext";
+import theme from "./_theme";
 import { ThemeProvider } from "@mui/material";
 import type { Metadata } from "next";
 import { ToastContainer } from "react-toastify";

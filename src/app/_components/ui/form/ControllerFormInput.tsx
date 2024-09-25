@@ -1,10 +1,10 @@
 import { Controller } from "react-hook-form";
 
 // component
-import InputText from "@/_components/ui/input/InputText";
+import InputText from "../../../_components/ui/input/InputText";
 // type
-import { ControllerFormProps } from "@/_components/ui/type";
-import { MarterialCategoriesProps } from "@/_components/pages/material/type";
+import { ControllerFormProps } from "../../../_components/ui/type";
+import { MarterialCategoriesProps } from "../../../_components/pages/material/type";
 
 const ControllerFormInput: React.FC<ControllerFormProps> = ({
   control,

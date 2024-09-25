@@ -1,13 +1,13 @@
 import { Controller } from "react-hook-form";
 // component
-import SelectOption from "@/_components/ui/select/SelectOption";
+import SelectOption from "../../../_components/ui/select/SelectOption";
 
 // mui
 import { Box } from "@mui/material";
 
 // type
-import { ControllerFormProps } from "@/_components/ui/type";
-import { MarterialCategoriesProps } from "@/_components/pages/material/type";
+import { ControllerFormProps } from "../../../_components/ui/type";
+import { MarterialCategoriesProps } from "../../../_components/pages/material/type";
 
 const ControllerFormSelect: React.FC<ControllerFormProps> = ({
   control,

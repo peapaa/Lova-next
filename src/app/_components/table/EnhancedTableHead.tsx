@@ -2,7 +2,7 @@
 import { TableCell, TableHead, TableRow, TableSortLabel } from "@mui/material";
 
 // mui
-import { EnhancedTableProps } from "@/_components/table/type";
+import { EnhancedTableProps } from "../../_components/table/type";
 
 const EnhancedTableHead = (props: EnhancedTableProps) => {
   const { headCells } = props;

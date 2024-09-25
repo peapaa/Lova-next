@@ -1,14 +1,14 @@
 // type
-import { ControllerFormSelectWithSupplierProps } from "@/_components/ui/type";
-import { withSupplierProps } from "@/_hocs/type";
+import { ControllerFormSelectWithSupplierProps } from "../../../_components/ui/type";
+import { withSupplierProps } from "../../../_hocs/type";
 // mui
 import { Box } from "@mui/material";
 // component
-import Loading from "@/_components/ui/loading/Loading";
-import { ButtonRetry } from "@/_components/ui/button";
-import ControllerFormSelect from "@/_components/ui/form/ControllerFormSelect";
+import Loading from "../../../_components/ui/loading/Loading";
+import { ButtonRetry } from "../../../_components/ui/button";
+import ControllerFormSelect from "../../../_components/ui/form/ControllerFormSelect";
 // hoc
-import withGetSupplier from "@/_hocs/withGetSupplier";
+import withGetSupplier from "../../../_hocs/withGetSupplier";
 
 const ControllerFormSelectWithSupplier = ({
   supplier,

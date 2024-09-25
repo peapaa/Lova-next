@@ -8,13 +8,13 @@ import { Button, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 // hook
-import useSearchQuery from "@/_hooks/useSearchQuery";
+import useSearchQuery from "../../../_hooks/useSearchQuery";
 
 // component
-import InputSearchByName from "@/_components/ui/input/InputSearchByName";
+import InputSearchByName from "../../../_components/ui/input/InputSearchByName";
 
 // type
-import { FormValuesCategory } from "@/_components/pages/category/type";
+import { FormValuesCategory } from "../../../_components/pages/category/type";
 
 const NavCategory = () => {
   const theme = useTheme();

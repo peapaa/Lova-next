@@ -1,4 +1,4 @@
-import { SelectCheckAllTableProps } from "@/_components/table/type";
+import { SelectCheckAllTableProps } from "../../_components/table/type";
 import { ExpandMore } from "@mui/icons-material";
 import { Button, Checkbox } from "@mui/material";
 

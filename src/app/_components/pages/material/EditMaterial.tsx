@@ -2,23 +2,23 @@
 
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, Resolver } from "react-hook-form";
 import { toast } from "react-toastify";
 // components
-import formDataMaterial from "@/_components/pages/material/form/formDataMaterial";
-import Loading from "@/_components/ui/loading/Loading";
-import FormActionMaterial from "@/_components/pages/material/form/FormActionMaterial";
+import formDataMaterial from "../../../_components/pages/material/form/formDataMaterial";
+import Loading from "../../../_components/ui/loading/Loading";
+import FormActionMaterial from "../../../_components/pages/material/form/FormActionMaterial";
 // api
-import { getOneMaterial, updateMaterial } from "@/_api/material";
+import { getOneMaterial, updateMaterial } from "../../../_api/material";
 // yup
 import { yupResolver } from "@hookform/resolvers/yup";
-import { editMaterialSchema } from "@/_components/pages/material/validateMaterial";
+import { editMaterialSchema } from "../../../_components/pages/material/validateMaterial";
 //mui
 import { Box } from "@mui/material";
 // type
-import { MarterialCategoriesProps } from "@/_components/pages/material/type";
+import { MarterialCategoriesProps } from "../../../_components/pages/material/type";
 // hoc
-import { withCheckId } from "@/_hocs";
+import { withCheckId } from "../../../_hocs";
 // next
 import { useRouter } from "next/navigation";
 
@@ -28,7 +28,9 @@ const EditMaterial = ({ id }: { id: string }) => {
   const [newImage, setNewImage] = useState<string | null>(null);
 
   const formMethod = useForm<MarterialCategoriesProps>({
-    resolver: yupResolver(editMaterialSchema),
+    resolver: yupResolver(
+      editMaterialSchema
+    ) as unknown as Resolver<MarterialCategoriesProps>,
     defaultValues: {
       image: [],
       part_number: "",

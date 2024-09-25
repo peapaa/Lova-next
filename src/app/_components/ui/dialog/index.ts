@@ -1,1 +1,1 @@
-export { default as DeleteCategoryDialog } from "@/_components/ui/dialog/DeleteCategoryDialog";
+export { default as DeleteCategoryDialog } from "../../../_components/ui/dialog/DeleteCategoryDialog";

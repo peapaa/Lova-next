@@ -1,5 +1,5 @@
 // pages
-import { MarterialCategoriesProps } from "@/_components/pages/material/type";
+import { MarterialCategoriesProps } from "../../../../_components/pages/material/type";
 
 const formDataMaterial = (data: MarterialCategoriesProps) => {
   const formData = new FormData();

@@ -1,14 +1,14 @@
 import { Controller } from "react-hook-form";
 // components
-import InputImage from "@/_components/ui/input/InputImage";
-import ControllerFormInput from "@/_components/ui/form/ControllerFormInput";
-import ControllerFormSelectWithCategories from "@/_components/ui/form/ControllerFormSelectWithCategories";
-import ControllerFormSelectWithSupplier from "@/_components/ui/form/ControllerFormSelectWithSupplier";
-import ButtonForm from "@/_components/ui/button/ButtonForm";
+import InputImage from "../../../../_components/ui/input/InputImage";
+import ControllerFormInput from "../../../../_components/ui/form/ControllerFormInput";
+import ControllerFormSelectWithCategories from "../../../../_components/ui/form/ControllerFormSelectWithCategories";
+import ControllerFormSelectWithSupplier from "../../../../_components/ui/form/ControllerFormSelectWithSupplier";
+import ButtonForm from "../../../../_components/ui/button/ButtonForm";
 // mui
 import { Box, Grid } from "@mui/material";
 // type
-import { FormActionMateriaProps } from "@/_components/pages/material/type";
+import { FormActionMateriaProps } from "../../../../_components/pages/material/type";
 
 const FormActionMaterial: React.FC<FormActionMateriaProps> = ({
   onSubmit,

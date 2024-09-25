@@ -1,4 +1,4 @@
-import { ButtonRetryProps } from "@/_components/ui/type";
+import { ButtonRetryProps } from "../../../_components/ui/type";
 import { Button } from "@mui/material";
 
 const ButtonRetry: React.FC<ButtonRetryProps> = ({ className, onClick }) => {

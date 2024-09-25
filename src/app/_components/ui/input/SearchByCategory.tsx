@@ -5,13 +5,13 @@ import { Box, InputAdornment } from "@mui/material";
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 // type
-import { WithCategoriesProps } from "@/_hocs/type";
-import { InputSearchProps } from "@/_components/ui/type";
+import { WithCategoriesProps } from "../../../_hocs/type";
+import { InputSearchProps } from "../../../_components/ui/type";
 // component
-import Loading from "@/_components/ui/loading/Loading";
-import { ButtonRetry } from "@/_components/ui/button";
+import Loading from "../../../_components/ui/loading/Loading";
+import { ButtonRetry } from "../../../_components/ui/button";
 // hoc
-import { withGetCategories } from "@/_hocs";
+import { withGetCategories } from "../../../_hocs";
 
 const SearchByCategory = ({
   categories,

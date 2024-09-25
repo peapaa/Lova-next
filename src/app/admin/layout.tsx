@@ -3,11 +3,12 @@
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 // component
-import { Footer } from "@/_components/layouts/footer";
-import { Header } from "@/_components/layouts/header";
-import { SideBar } from "@/_components/layouts/sidebar";
+import Header from "../_components/layouts/header/Header";
+import SideBar from "../_components/layouts/sidebar/SideBar";
+import Footer from "../_components/layouts/footer/Footer";
 // hooks
-import useAuthContext from "@/_hooks/useAuthContext";
+import useAuthContext from "../_hooks/useAuthContext";
+
 // mui
 import { Box } from "@mui/material";
 

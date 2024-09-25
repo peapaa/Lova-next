@@ -1,16 +1,16 @@
 import { Controller } from "react-hook-form";
 
 // component
-import InputImage from "@/_components/ui/input/InputImage";
-import InputText from "@/_components/ui/input/InputText";
-import SelectOption from "@/_components/ui/select/SelectOption";
+import InputImage from "../../../_components/ui/input/InputImage";
+import InputText from "../../../_components/ui/input/InputText";
+import SelectOption from "../../../_components/ui/select/SelectOption";
 
-import ButtonForm from "@/_components/ui/button/ButtonForm";
+import ButtonForm from "../../../_components/ui/button/ButtonForm";
 // type
-import { FormActionProps } from "@/_components/pages/category/type";
+import { FormActionProps } from "../../../_components/pages/category/type";
 
 // utils
-import { price_types } from "@/_utils/data";
+import { price_types } from "../../../_utils/data";
 
 const FormActionCategory: React.FC<FormActionProps> = ({
   onSubmit,

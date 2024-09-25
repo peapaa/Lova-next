@@ -4,13 +4,16 @@ import { Controller, useForm } from "react-hook-form";
 // mui
 import { Button, Typography, useTheme } from "@mui/material";
 // hooks
-import useSearchQuery from "@/_hooks/useSearchQuery";
+import useSearchQuery from "../../../_hooks/useSearchQuery";
 // type
-import { FormValuesMaterial } from "@/_components/pages/material/type";
+import { FormValuesMaterial } from "../../../_components/pages/material/type";
 // components
-import InputSearchByName from "@/_components/ui/input/InputSearchByName";
-import { ButtonClearSearch, ButtonSearch } from "@/_components/ui/button";
-import SearchByCategory from "@/_components/ui/input/SearchByCategory";
+import InputSearchByName from "../../../_components/ui/input/InputSearchByName";
+import {
+  ButtonClearSearch,
+  ButtonSearch,
+} from "../../../_components/ui/button";
+import SearchByCategory from "../../../_components/ui/input/SearchByCategory";
 // next
 import { usePathname } from "next/navigation";
 import Link from "next/link";

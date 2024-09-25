@@ -11,11 +11,11 @@ import ListItemText from "@mui/material/ListItemText";
 import { useTheme } from "@mui/material/styles";
 
 // logo
-import resourceLogo from "@/_assets/images/sidebar-logo/Vector.svg";
-import dashbroadLogo from "@/_assets/images/sidebar-logo/view-grid.svg";
+import resourceLogo from "../../../_assets/images/sidebar-logo/Vector.svg";
+import dashbroadLogo from "../../../_assets/images/sidebar-logo/view-grid.svg";
 
 // utils
-import { dashboardList, resourcesList } from "@/_utils/data";
+import { dashboardList, resourcesList } from "../../../_utils/data";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

@@ -1,8 +1,8 @@
 // type
-import { InputTextProps } from "@/_components/ui/type";
+import { InputTextProps } from "../../../_components/ui/type";
 
 //  component
-import ErrorText from "@/_components/ui/error-text/ErrorText";
+import ErrorText from "../../../_components/ui/error-text/ErrorText";
 
 // mui
 import { Box } from "@mui/material";
